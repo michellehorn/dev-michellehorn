@@ -13,7 +13,7 @@ import { firebaseConfig } from '../src/firebase.config.js';
 firebase.initializeApp(firebaseConfig);
 
 Vue.use(BootstrapVue)
-Vue.config.productionTip = false
+Vue.config.productionTip = true;
 new Vue({
     router,
     render: h => h(App)

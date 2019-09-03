@@ -2,7 +2,7 @@
   <div class="form-inline container ">
     <div class="col-md-3 col-sm-12 col-lg-3 fadeIn" v-for="(repo, index) in repos" :key="index">
       <div class="card h-100 m-1 bg-dark text-light p-2">
-        <h6 class="font-md text-center text-font-tertiary text-success font-weight-bold pt-2">{{repo.name}}</h6>
+        <h6 class="font-md text-center text-font-tertiary font-weight-bold pt-2 title-repo">{{repo.name}}</h6>
         <span class="pt-2 text-font-secondary font-sm">{{repo.description}}</span>
         <div class="bottom-bar w-100">
           <div class="text-left">
@@ -52,7 +52,6 @@ export default {
         )
         .then(response => {
           this.repos = response.data;
-          console.log(this.repos);
         });
     },
     goTo(url) {
@@ -62,6 +61,9 @@ export default {
 };
 </script>
 <style>
+.title-repo {
+  color: rgb(209, 135, 231);
+}
 .card.bg-dark {
     height: 150px!important;
     justify-content: flex-end;

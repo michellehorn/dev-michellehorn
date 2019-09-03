@@ -88,5 +88,8 @@ button {
   .form {
     padding: 4% 10%;
   }
+  button {
+  padding: 0.5em 2em !important;
+}
 }
 </style>

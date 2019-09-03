@@ -1,7 +1,7 @@
 <template>
   <div class="about fadeIn">
-    <h1>
-      <code>Meet Mi</code>!
+    <h1 class="title-about">
+      Meet Mi!
     </h1>
     <div class="form-inline container pt-4">
       <div class="col-md-4 col-lg-4 col-sm-12">
@@ -12,25 +12,25 @@
           25 anos, nascida em Florianópolis. Apaixonada por Star wars e friends.
           Desenvolvedora de Front-end ha cerca de 3 anos.
         </h6>
-        <div class="d-flex pt-2">
+        <div class="d-flex pt-5">
           <div class="col-4 pl-0">
             <h6>
-              <b>Hardskills</b>:
+              Hardskills:
               <span
                 class="skill"
                 v-for="(skill, index) in hardSkills"
                 :key="index"
-              ><code>#{{skill}}</code></span>
+              >#{{skill}}</span>
             </h6>
           </div>
           <div class="col-8">
             <h6>
-              <b>Softskills</b>:
+              Softskills:
               <span
                 class="skill"
                 v-for="(skill, index) in softSkills"
                 :key="index"
-              ><code>{{skill}}</code></span>
+              >{{skill}}</span>
             </h6>
           </div>
         </div>
@@ -78,6 +78,10 @@ img.img {
   border-radius: 3px;
   font-size: 14px;
   margin: 10px 0px;
+  color: rgb(209, 135, 231);
+}
+.title-about {
+  color: rgb(209, 135, 231);
 }
 @media screen and (max-width: 500px) {
   .about {

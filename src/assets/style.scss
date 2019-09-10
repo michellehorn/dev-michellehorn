@@ -1,8 +1,8 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/bootstrap-vue/src/index.scss';
-@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Lobster|Roboto+Mono&display=swap');
 .text-font-primary {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lobster', cursive;
 }
 
 .text-font-secondary {
@@ -10,7 +10,7 @@
 }
 
 .text-font-tertiary {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .fadeIn {
@@ -26,11 +26,68 @@
     animation: fadein 2s;
 }
 
+.fadeOut {
+    text-align: center;
+    -webkit-animation: fadeout 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeout 2s;
+    /* Firefox < 16 */
+    -ms-animation: fadeout 2s;
+    /* Internet Explorer */
+    -o-animation: fadeout 2s;
+    /* Opera < 12.1 */
+    animation: fadeout 2s;
+}
+
+.blink {
+    animation: blink 2s infinite;
+}
+
+.round {
+    animation: round 0.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes round {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    75% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes fadein {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }

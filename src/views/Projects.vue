@@ -7,7 +7,7 @@
         >{{repo.name}}</h6>
         <span class="pt-5 text-font-secondary font-sm">{{repo.description}}</span>
         <div class="bottom-bar w-100">
-          <div class="text-left" v-show="repo.languages">
+          <div class="text-left" v-if="repo.languages">
             <span
               class="bg-secondary rounded pl-1 pr-1 font-sm"
               v-for="(rep, index) in repo.languages"

@@ -19,7 +19,7 @@
         </button>
       </div>
     </div>
-    <div>
+    <div v-if="size > 600">
       <h5 class="text-light">{{this.initialPos + 1}} to {{this.finalPos}} of {{this.images.length}}</h5>
     </div>
   </div>

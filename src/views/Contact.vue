@@ -32,9 +32,9 @@
           <b-button type="submit" variant="dark">Enviar</b-button>
         </div>
       </div>
-      <div v-if="loading"><span class="text-light text-font-primary">Carregando <i class="round fa fa-spinner"></i></span></div>
+      <div v-if="loading"><span class="text-light text-font-primary">Loading <i class="round fa fa-spinner"></i></span></div>
       <div v-if="msg === 'success'" class="text-light fadeIn pt-3 text-font-primary">
-        Mensagem enviada!
+        Message sent!
         <span class="p-1">
           <i class="fa-1x text-success fa fa-check-circle"></i>
         </span>
